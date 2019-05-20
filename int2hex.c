@@ -7,7 +7,7 @@
 
 int main(int argc, char** argv) {
   if (argc != 2) {
-    printf("Usage: int2hex <integer>");
+    printf("Usage: int2hex <integer>\n");
     return EXIT_FAILURE;
   }
 
