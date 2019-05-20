@@ -1,5 +1,5 @@
 CFLAGS = -Wall -std=c11 -o
-PROGS = char2int int2char excited_echo
+PROGS = char2int int2char excited_echo int2hex hex2int
 COMPILE = gcc $(CFLAGS) $@ $<
 
 all: $(PROGS)
@@ -16,4 +16,8 @@ int2char: int2char.c
 excited_echo: excited_echo.c
 	$(COMPILE)
 
+int2hex: int2hex.c
+	$(COMPILE)
 
+hex2int: hex2int.c
+	$(COMPILE)
