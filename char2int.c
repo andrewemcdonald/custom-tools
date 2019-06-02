@@ -1,4 +1,4 @@
-// Copyright Andrew McDonald 2019. All rights reserved
+// Copyright (c) Andrew McDonald 2019. All rights reserved
 
 // char2int.c : Prints out the unsigned decimal or hex
 // representation of a given character.
