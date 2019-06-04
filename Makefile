@@ -1,6 +1,5 @@
-CFLAGS = -Wall -std=c11 -o
-PROGS = char2int int2char excited_echo int2hex hex2int dns
-COMPILE = gcc $(CFLAGS) $@ $<
+PROGS = char2int int2char excited_echo int2hex hex2int dns pim netend
+COMPILE = gcc -Wall -std=c11 -o $@ $<
 COMPILECPP = g++ -Wall -std=c++11 -o $@ $<
 
 all: $(PROGS)
@@ -25,3 +24,9 @@ hex2int: hex2int.c
 
 dns: dns.cc
 	$(COMPILECPP)
+
+pim : pim.cc
+	$(COMPILECPP)
+
+netend : netend.c
+	$(COMPILE)

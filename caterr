@@ -1,0 +1,2 @@
+# Prints comprehensive list of error codes to stdout
+cat /usr/include/asm-generic/errno.h
