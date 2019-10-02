@@ -1,0 +1,29 @@
+#\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#||||||||Andrew's shell configs|||||||
+#////////////////////////////////////
+
+# Test to make sure configs are getting run
+#echo setting up configs...
+
+#Change umask to make directory sharing easier
+#umask 0002
+
+#Ignore duplicates in comand history and increase
+#history size to 1000 lines
+export HISTCONTOL=ignoredups
+export HISTSIZE=1000
+
+#Add some helpful aliases
+alias ll='ls -l --color=auto'
+alias lla='ls -la --color=auto'
+alias vi='vim'
+alias startsql='mysql -u 'root' -p'
+alias qgcc='gcc -Wall -g -std=gnu99 -o'
+alias agcc='gcc -Wall -g -std=gnu99 -Og -o'
+alias gdb='gdb -tui'
+alias CSE='cd ~/Documents/UW/CSE'
+alias attu='ssh mcdonand@attu.cs.washington.edu'
+
+#Add additional local/custom programs to bash
+export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools"
+export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools/c_progs"

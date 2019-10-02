@@ -1,10 +1,10 @@
 PROGS = char2int int2char excited_echo int2hex hex2int dns pim netend
-COMPILE = gcc -Wall -std=c11 -o $@ $<
-COMPILECPP = g++ -Wall -std=c++11 -o $@ $<
+COMPILE = gcc -Wall -std=c11 -o c_progs/$@ $<
+COMPILECPP = g++ -Wall -std=c++11 -o c_progs/$@ $<
 
 all: $(PROGS)
 
-clean: $(PROGS)
+clean:
 	rm $(PROGS)
 
 char2int: char2int.c
