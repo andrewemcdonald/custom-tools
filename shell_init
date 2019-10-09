@@ -1,5 +1,5 @@
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-#||||||||Andrew's shell configs|||||||
+#||||||||Andrew's shell configs||||||
 #////////////////////////////////////
 
 # Test to make sure configs are getting run
@@ -23,6 +23,8 @@ alias agcc='gcc -Wall -g -std=gnu99 -Og -o'
 alias gdb='gdb -tui'
 alias CSE='cd ~/Documents/UW/CSE'
 alias attu='ssh mcdonand@attu.cs.washington.edu'
+alias demouse='/usr/bin/unclutter -idle 0.01 &'
+alias mouse='killall /usr/bin/unclutter'
 
 #Add additional local/custom programs to bash
 export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools"
