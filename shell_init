@@ -25,6 +25,7 @@ alias CSE='cd ~/Documents/UW/CSE'
 alias attu='ssh mcdonand@attu.cs.washington.edu'
 alias demouse='/usr/bin/unclutter -idle 0.01 &'
 alias mouse='killall /usr/bin/unclutter'
+alias gw='./gradlew'
 
 #Add additional local/custom programs to bash
 export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools"
