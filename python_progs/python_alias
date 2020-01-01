@@ -1,2 +1,0 @@
-# Collection of aliases for controlling execution of python programs
-alias mapit='exec mapit.py'

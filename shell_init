@@ -28,7 +28,7 @@ alias mouse='killall /usr/bin/unclutter'
 alias gw='./gradlew'
 
 # Add Python aliases
-. ./python_progs/python_alias
+alias mapit='exec mapit.py'
 
 #Add additional local/custom programs to bash
 export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools"
