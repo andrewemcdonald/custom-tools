@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
 
   int n = atoi(argv[1]);
 
-  printf("%d in hex is: %x\n", n, n);
+  printf("%d in hex is: 0x%x\n", n, n);
 
   return EXIT_SUCCESS;
 }
