@@ -27,6 +27,10 @@ alias demouse='/usr/bin/unclutter -idle 0.01 &'
 alias mouse='killall /usr/bin/unclutter'
 alias gw='./gradlew'
 
+# Add Python aliases
+. ./python_progs/python_alias
+
 #Add additional local/custom programs to bash
 export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools"
 export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools/c_progs"
+export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools/python_progs"
