@@ -27,6 +27,7 @@ alias demouse='/usr/bin/unclutter -idle 0.01 &'
 alias mouse='killall /usr/bin/unclutter'
 alias gw='./gradlew'
 alias plusx='chmod +x '
+alias tools='cd /home/andrew/Documents/Programs/custom-tools'
 
 # Add Python aliases
 alias mapit='exec mapit.py'
