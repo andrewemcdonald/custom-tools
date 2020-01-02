@@ -26,6 +26,7 @@ alias attu='ssh mcdonand@attu.cs.washington.edu'
 alias demouse='/usr/bin/unclutter -idle 0.01 &'
 alias mouse='killall /usr/bin/unclutter'
 alias gw='./gradlew'
+alias plusx='chmod +x '
 
 # Add Python aliases
 alias mapit='exec mapit.py'

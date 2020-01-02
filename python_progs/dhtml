@@ -1,0 +1,14 @@
+#! /usr/bin/python3
+
+import requests, sys, argparse
+
+# Parse command line arguments.
+parser = argparse.ArgumentParser(description='Downloads the index html file' + \
+    ' from the given http(s) address and prints contents to stdout.')
+parser.add_argument('address', help='The address to download from.')
+args = parser.parse_args()
+
+# Download and print html
+res = requests.get(args.address)
+
+print(res.text)
