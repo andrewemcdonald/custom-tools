@@ -1,0 +1,40 @@
+#! /usr/bin/python3
+
+import requests, sys, argparse
+
+locations = {
+    'bellevue': {'lat': 47.64, 'lon': -122.17}
+}
+addr = 'https://api.weather.gov'
+default_periods = '2'
+max_periods = 14
+
+# Deal with cmd line args
+parser = argparse.ArgumentParser(description='Searches the National Weather \
+    + Service for weather on saved cities.')
+parser.add_argument('city', help='The city to search.')
+parser.add_argument('-p', default=default_periods, dest='num_periods',
+                     help='The number of time periods to include in output. ' \
+                     + 'NOTE: This utility supports up to ' + str(max_periods) \
+                     + ' time periods.' )
+args = parser.parse_args()
+
+# Acquire redirect to the correct forecast office based on GPS coordinates.
+coordinates = locations[args.city.lower()]
+addr += '/points/' + str(coordinates['lat']) + ',' + str(coordinates['lon'])
+redirect_result = requests.get(addr)
+redirect_result.raise_for_status()
+redirect_json = redirect_result.json()
+
+# Acquire forecast information
+forecast_result = requests.get(redirect_json['properties']['forecast'])
+forecast_result.raise_for_status()
+forecast_json = forecast_result.json()
+
+# Prints results
+for i in range(min(max_periods, int(args.num_periods))):
+    period = forecast_json['properties']['periods'][i]
+    print(period['name'] + ':')
+    print(period['detailedForecast'])
+    print()
+

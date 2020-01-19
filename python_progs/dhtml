@@ -10,5 +10,6 @@ args = parser.parse_args()
 
 # Download and print html
 res = requests.get(args.address)
+res.raise_for_status()
 
 print(res.text)
