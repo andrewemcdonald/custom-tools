@@ -5,18 +5,16 @@
 # Test to make sure configs are getting run
 #echo setting up configs...
 
-#Change umask to make directory sharing easier
-#umask 0002
+
 
 #Ignore duplicates in comand history and increase
 #history size to 1000 lines
-export HISTCONTOL=ignoredups
+export HISTCONTOL=ignoreboth
 export HISTSIZE=1000
 
 #Add some helpful aliases
 alias ll='ls -l --color=auto'
 alias lla='ls -la --color=auto'
-alias vi='vim'
 alias startsql='mysql -u 'root' -p'
 alias qgcc='gcc -Wall -g -std=gnu99 -o'
 alias agcc='gcc -Wall -g -std=gnu99 -Og -o'
@@ -28,6 +26,7 @@ alias mouse='killall /usr/bin/unclutter'
 alias gw='./gradlew'
 alias plusx='chmod +x '
 alias tools='cd /home/andrew/Documents/Programs/custom-tools'
+alias 451='cd /home/andrew/Documents/UW/CSE/CSE_451'
 
 # Add Python aliases
 alias mapit='exec mapit.py'
