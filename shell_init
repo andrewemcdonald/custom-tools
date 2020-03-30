@@ -1,11 +1,12 @@
+# Test to make sure configs are getting run
+#echo setting up configs...
+
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 #||||||||Andrew's shell configs||||||
 #////////////////////////////////////
 
-# Test to make sure configs are getting run
-#echo setting up configs...
-
-
+# Setup the terminal prompt
+PS1='\[\033[01;32m\]\u \[\033[1;34m\]\W \[\033[0;37m\]\$ '
 
 #Ignore duplicates in comand history and increase
 #history size to 1000 lines
