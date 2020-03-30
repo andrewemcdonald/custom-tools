@@ -16,18 +16,21 @@ export HISTSIZE=1000
 #Add some helpful aliases
 alias ll='ls -l --color=auto'
 alias lla='ls -la --color=auto'
-alias startsql='mysql -u 'root' -p'
+
 alias qgcc='gcc -Wall -g -std=gnu99 -o'
 alias agcc='gcc -Wall -g -std=gnu99 -Og -o'
 alias gdb='gdb -tui'
+
 alias CSE='cd ~/Documents/UW/CSE'
+alias tools='cd /home/andrew/Documents/Programs/custom-tools'
+alias ptools='tools; cat shell_init'
+
 alias attu='ssh mcdonand@attu.cs.washington.edu'
+
 alias demouse='/usr/bin/unclutter -idle 0.01 &'
 alias mouse='killall /usr/bin/unclutter'
-alias gw='./gradlew'
+
 alias plusx='chmod +x '
-alias tools='cd /home/andrew/Documents/Programs/custom-tools'
-alias 451='cd /home/andrew/Documents/UW/CSE/CSE_451'
 
 # Add Python aliases
 alias mapit='exec mapit.py'
