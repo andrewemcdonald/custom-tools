@@ -6,7 +6,7 @@
 #////////////////////////////////////
 
 # Setup the terminal prompt
-PS1='\[\033[01;32m\]\u \[\033[1;34m\]\W \[\033[0;37m\]\$ '
+PS1='\[\033[01;32m\]\u \[\033[1;34m\]\W \[\033[00m\]\$ '
 
 #Ignore duplicates in comand history and increase
 #history size to 1000 lines
@@ -30,7 +30,12 @@ alias attu='ssh mcdonand@attu.cs.washington.edu'
 alias demouse='/usr/bin/unclutter -idle 0.01 &'
 alias mouse='killall /usr/bin/unclutter'
 
-alias plusx='chmod +x '
+alias plusx='chmod +x'
+
+# Self protection
+alias dd='echo youll shoot your eye out!'
+alias rm='rm -I'
+
 
 # Add Python aliases
 alias mapit='exec mapit.py'
