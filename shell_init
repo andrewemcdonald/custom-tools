@@ -21,7 +21,7 @@ alias qgcc='gcc -Wall -g -std=gnu99 -o'
 alias agcc='gcc -Wall -g -std=gnu99 -Og -o'
 alias gdb='gdb -tui'
 
-alias CSE='cd ~/Documents/UW/CSE'
+alias uw='cd /home/andrew/Documents/UW'
 alias tools='cd /home/andrew/Documents/Programs/custom-tools'
 alias ptools='tools; cat shell_init'
 
