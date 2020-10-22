@@ -1,4 +1,4 @@
 # VSCode application data
 .vscode
 # folder containing compiled programs for this specific machine
-c_progs/*
+progs

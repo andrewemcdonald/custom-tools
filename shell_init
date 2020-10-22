@@ -1,4 +1,4 @@
-# Test to make sure configs are getting run
+#Test to make sure configs are getting run
 #echo setting up configs...
 
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -21,11 +21,12 @@ alias qgcc='gcc -Wall -g -std=gnu99 -o'
 alias agcc='gcc -Wall -g -std=gnu99 -Og -o'
 alias gdb='gdb -tui'
 
-alias uw='cd /home/andrew/Documents/UW'
-alias tools='cd /home/andrew/Documents/Programs/custom-tools'
+alias xk='cd /home/andrew/Documents/UW/CSE_451/xk; clear'
+alias uw='cd /home/andrew/Documents/UW; clear'
+alias tools='cd /home/andrew/Documents/Programs/custom-tools; clear'
 alias ptools='tools; cat shell_init'
 
-alias attu='ssh mcdonand@attu.cs.washington.edu'
+alias attu='ssh mcdonand@attu7.cs.washington.edu'
 
 alias demouse='/usr/bin/unclutter -idle 0.01 &'
 alias mouse='killall /usr/bin/unclutter'
@@ -41,6 +42,7 @@ alias rm='rm -I'
 alias mapit='exec mapit.py'
 
 #Add additional local/custom programs to bash
-export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools"
-export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools/c_progs"
-export PATH="$PATH:/usr/local/bin:~/Documents/Programs/custom-tools/python_progs"
+export PATH="$PATH:~/Documents/Programs/custom-tools"
+export PATH="$PATH:~/Documents/Programs/custom-tools/c_progs"
+export PATH="$PATH:~/Documents/Programs/custom-tools/python_progs"
+export PATH="$PATH:/usr/local/qemu-4.2.0/x86_64-softmmu"

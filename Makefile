@@ -1,8 +1,9 @@
 PROGS = char2int int2char excited_echo int2hex hex2int dns pim netend
-COMPILE = gcc -Wall -std=c11 -o c_progs/$@ $<
-COMPILECPP = g++ -Wall -std=c++11 -o c_progs/$@ $<
+COMPILE = gcc -Wall -std=c11 -o progs/$@ $<
+COMPILECPP = g++ -Wall -std=c++11 -o progs/$@ $<
 
 all: $(PROGS)
+	cp python/* progs
 
 clean:
 	rm $(PROGS)
